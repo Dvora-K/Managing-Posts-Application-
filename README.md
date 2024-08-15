@@ -1,4 +1,4 @@
-# JavaScript Web Application Managing Posts
+# JavaScript Web Application Managing Posts And To-Dos
 
 ## Project Overview
 
