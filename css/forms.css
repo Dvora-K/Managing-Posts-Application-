@@ -1,0 +1,5 @@
+#formLogIn,
+#formSignUp {
+    display: flex;
+    flex-direction: column;
+}

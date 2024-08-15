@@ -1,0 +1,18 @@
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 45%;
+}
+#commentsArticle p {
+    background-color: #f2f2f2;
+    width: 75%;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 8px;
+}
+.hide{
+  
+  visibility: hidden;  
+  /* display: none; */
+}

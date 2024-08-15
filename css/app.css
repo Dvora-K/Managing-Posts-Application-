@@ -1,0 +1,135 @@
+/* סגנון כללי */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* סגנון לכפתורי הקריאה לפוסט הבא/הקודם */
+
+#previous,
+#next,
+#addComment,
+#saveComment,
+#saveToDo,
+#btnLogin,
+#btnSighUp {
+    background-color: rgba(0, 0, 0, 0.698);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 35%;
+}
+
+#previous:hover,
+#next:hover,
+#addComment:hover,
+#saveComment:hover,
+#saveToDo:hover,
+#btnLogin:hover,
+#btnSighUp:hover {
+    background-color: #666;
+}
+
+
+/* General styles */
+
+ul li {
+    text-decoration-style: none;
+}
+
+li a {
+    text-decoration-style: none;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+textarea {
+    padding: 25px;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar button:hover {
+    color: #0d81fd;
+}
+
+
+/* Styling for the dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#addComment {
+    width: 50%;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+select {
+    padding: 15px;
+}

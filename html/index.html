@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <link rel="stylesheet" href="../css/fontface.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/tasks.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <button id="Home" class="text">Home</button>
+        <button id="allPosts" class="text">AllPosts</button>
+        <button class="hide" id="Todos" class="text">MyTodos</button>
+        <div class="dropdown">
+            <button id="account">Account</button>
+            <div class="dropdown-content">
+                <a id="LogIn" class="text" href="#">Log in</a>
+                <a id="SignUp" class="text" href="#">Sign up</a>
+            </div>
+        </div>
+        <button class="hide" id="logOut">LogOut</button>
+    </nav>
+
+    <main>
+
+    </main>
+
+    <template id="HomeT">
+        <h1 class="text">WELCOME!</h1>
+    </template>
+
+    <template id="LogInT"><div id="formLogIn">
+        <label for="emailUser"></label>
+        <input class="text" id="emailUser" placeholder="Email " />
+
+        <label for="password"></label>
+        <input type="password" name="" id="passwordUser" placeholder="Password " />
+
+        <button id="btnLogin">Login</button></div>
+        <script src="../js/login.js"></script>
+    </template>
+
+    <template id="SignUpT">
+        <div id="formSignUp">
+        <label for="name"></label>
+        <input class="text" type="text" id="name" name="name" placeholder="Name">
+
+        <label for="email"></label>
+        <input class="text" type="text" id="email" name="email" placeholder="Email ">
+
+        <label for="password"></label>
+        <input type="password" name="" id="password" placeholder="Password ">
+        <label for=""></label>
+        <select name="gender">
+            <option class="text" id="gender">male</option>
+            <option class="text" id="gender">female</option>
+        </select>
+        <button id="btnSighUp">SignUp</button></div>
+        <script src="../js/signUp.js"></script>
+    </template>
+
+    <template id="allPostsT">
+        <ul id="postsList"> </ul>
+        <p class="text" id="indexOfPage"></p>
+        <p id="sumOfPosts"></p>
+        <button class="text" id="previous">previous</button>
+        <button class="text" id="next">Next</button>
+        <script src="../js/posts.js"></script>
+    </template>
+
+    <template id="singlePost">
+        <h1 class="text" id="titleArticle"></h1>
+        <p  class="text" id="bodyArticle"> </p>
+        <p class="text" id="authorArticle"></p>
+        <div id="commentsArticle"> </div>
+     <button class="hide" id="addComment" class="text">Add Comment</button>
+        <div class="hide" id="descriptionComment">
+            <label for="descriptionComment"></label>
+            <textarea id="descriptionUserComment" placeholder="add your comment here..."></textarea>
+            <button id="saveComment">Save Comment</button>
+        </div>
+    </template>
+    <template id="TodosT">
+        <button class="text" id="addTodo">Add Todo</button>
+        <button class="text" id="showTasks">Show all my tasks</button>
+        <ul id="todoList"></ul>
+        <form id="form" class="hide">
+            <div class="field">
+                <label class="text"  for="description">What You Have To do?</label>
+                <textarea class="text" id="description" placeholder="add to-do description here..."></textarea>
+            </div>
+            <div class="field">
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate">
+                <select id="status" name="status">
+                    <option class="text">pending</option>
+                    <option class="text">completed</option>
+                </select>
+            </div>
+            <button id="saveToDo">Save</button>
+            <div class="field"></div>
+        </form>
+        <form id="updateForm" class="hide">
+            <div class="field">
+                <textarea id="updateDesc" placeholder="add to-do description here..."></textarea>
+            </div>
+            <div class="field">
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="updateDueDate">
+                <select id="updateStatus" name="status">
+                    <option>pending</option>
+                    <option>completed</option>
+                </select>
+            </div>
+            <button id="updateToDo">Update</button>
+            <div class="field"></div>
+        </form>
+
+        <script src="../js/toDos.js"></script>
+    </template>
+    <script src="../js/app.js"></script>
+    <script src="../js/logOut.js"></script>
+</body>
+
+</html>

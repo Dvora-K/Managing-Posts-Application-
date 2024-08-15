@@ -1,0 +1,30 @@
+button {
+    background-color: #6ee3f3d8;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#addTodo {
+    padding: 10px;
+    background-color: #6ee3f3d8;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+
+#showTasks {
+    padding: 10px;
+    background-color: #6ee3f3d8;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.deleteTask,
+.updateTask {
+    background-color: rgba(0, 0, 0, 0.698);
+    color: white;
+    width: 30%;
+}
